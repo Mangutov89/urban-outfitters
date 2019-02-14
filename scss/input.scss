@@ -33,16 +33,12 @@ body {
 // nav 2
 
 .nav2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flexRowBetween;
+  @include margins;
+  @include widthHeight(57%, 40px);
   align-content: center;
   align-items: center;
-  height: 40px;
   color: #767676;
-  width: 57%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .nav2 a {
   color: inherit;
@@ -50,22 +46,19 @@ body {
   margin-right: 6%;
 }
 .nav2content3>img {
-  height: 37px;
-  width: auto;
+  @include widthHeight(auto, 37px);
 }
 
 .nav2content>img {
-  height: 20px;
-  width: auto;
+  @include widthHeight(auto, 20px);
 }
 
 .nav2content3 {
+  @include widthHeight(15%, 18px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15%;
   font-size: 12px;
-  height: 18px;
 }
 .nav2content {
   width: 15%;
@@ -73,19 +66,16 @@ body {
 }
 .nav2content2 {
   display: flex;
+  justify-content: space-between;
   font-family: helvetica,arial,sans-serif;
   font-size: 13px;
-  justify-content: space-between;
   width: 20%;
 }
 .grayBox {
   margin-top: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flexRowBetween;
+  @include margins;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2%
 }
 .limitedTime {
@@ -97,20 +87,16 @@ body {
 }
 
 .main1 {
-  display: flex;
-  flex-direction: row;
+  @include flexRowBetween;
+  @include margins;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .main1content {
-  display: flex;
-  flex-direction: column;
-  width: 49%;
+  @include flexColumn;
   align-items: center;
+  width: 49%;
 }
 
 .main1content>button,
@@ -120,14 +106,12 @@ body {
 }
 
 .main1content>img {
-  width: 100%;
-  height: auto;
+  @include widthHeight(100%, auto);
   margin-bottom: 2%;
 }
 
 .grayBoxContent>img {
-  width: 98%;
-  height: auto;
+  @include widthHeight(98%, auto);
 }
 
 .limitedTime>img {
@@ -135,10 +119,8 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins;
+  @include flexColumn;
   width: 57%;
 }
 
@@ -156,34 +138,28 @@ button {
 }
 
 .main2 {
-  display: flex;
-  flex-direction: row;
+  @include flexRowBetween;
+  @include margins;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .main2content>img {
-  width: 100%;
-  height: auto;
+  @include widthHeight(100%, auto);
   margin-bottom: 5%;
 }
 
 .main2content {
-  display: flex;
-  flex-direction: column;
-  width: 31%;
+  @include flexColumn;
   align-items: center;
+  width: 31%;
 }
 
 .footer1 {
   text-align: center;
   font-size: 12px;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  @include margins;
 }
 .line {
   width: 100%;
