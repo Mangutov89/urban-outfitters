@@ -5,6 +5,8 @@
 body {
   width: 100%;
 }
+
+@import "mixins";
 // nav 1 nav1content
 
 .nav1 {
@@ -38,7 +40,7 @@ body {
   align-items: center;
   height: 40px;
   color: #767676;
-  width: 80%;
+  width: 57%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -108,7 +110,13 @@ body {
   display: flex;
   flex-direction: column;
   width: 49%;
+  align-items: center;
+}
 
+.main1content>button,
+.main2content>button {
+  position: relative;
+  bottom: 60px;
 }
 
 .main1content>img {
@@ -117,9 +125,9 @@ body {
   margin-bottom: 2%;
 }
 
-.grayBox>img {
-  height: 62px;
-  width: auto;
+.grayBoxContent>img {
+  width: 98%;
+  height: auto;
 }
 
 .limitedTime>img {
@@ -131,7 +139,7 @@ body {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 57%;
 }
 
 .shop {
@@ -145,4 +153,38 @@ button {
   border-radius: none;
   padding: 7px 12px;
   letter-spacing: .7px;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main2content>img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.main2content {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  align-items: center;
+}
+
+.footer1 {
+  text-align: center;
+  font-size: 12px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.line {
+  width: 100%;
 }
