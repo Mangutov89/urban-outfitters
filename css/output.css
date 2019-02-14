@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  background-color: #ff788f; }
+
+.nav1content {
+  margin-right: 2%;
+  font-family: 'Francois One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px; }
+
+.nav1content2 a {
+  color: inherit; }
+
+.nav2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 40px;
+  color: #767676;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav2 a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 6%; }
+
+.nav2content3 > img {
+  height: 37px;
+  width: auto; }
+
+.nav2content > img {
+  height: 20px;
+  width: auto; }
+
+.nav2content3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  font-size: 12px;
+  height: 18px; }
+
+.nav2content {
+  width: 15%; }
+
+.nav2content2 {
+  display: flex;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 13px;
+  justify-content: space-between;
+  width: 20%; }
+
+.grayBox {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%; }
+
+.limitedTime {
+  width: 100%;
+  margin-bottom: -1%; }
+
+.limited {
+  margin-bottom: -1.5%; }
+
+.main1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.main1content {
+  display: flex;
+  flex-direction: column;
+  width: 49%; }
+
+.main1content > img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2%; }
+
+.grayBox > img {
+  height: 62px;
+  width: auto; }
+
+.limitedTime > img {
+  width: 100%; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%; }
+
+.shop {
+  text-align: center;
+  position: relative;
+  bottom: 50px; }
+
+button {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 9pt;
+  border-radius: none;
+  padding: 7px 12px;
+  letter-spacing: .7px; }
+
+/*# sourceMappingURL=output.css.map */
