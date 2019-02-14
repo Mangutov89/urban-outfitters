@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+@import "mixins";
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  color: white;
+  background-color: #435a62;
+}
+.nav1Group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.nav1content {
+  margin-right: 2%;
+  font-family: 'Francois One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 2px;
+}
+
+.nav1content3 a,
+.nav1content4 a {
+  color: inherit;
+}
+
+// nav 2
+
+.nav2 {
+  @include flexRowBetween;
+  @include margins;
+  @include widthHeight(95%, 40px);
+  align-content: center;
+  align-items: center;
+  color: #767676;
+}
+.nav2 a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 6%;
+}
+.nav2content3>img {
+  @include widthHeight(auto, 37px);
+}
+
+.nav2content>img {
+  @include widthHeight(auto, 20px);
+}
+
+.nav2content3 {
+  @include widthHeight(15%, 18px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.nav2content {
+  width: 15%;
+
+}
+
+.nav2content2 {
+  display: flex;
+  justify-content: space-between;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 13px;
+  width: 20%;
+}
+hr {
+  margin-top: 0%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  width: 18%;
+}
+
+.col2 {
+  width: 60%;
+}
+
+.col3 {
+  width: 18%;
+  background-color: red;
+}

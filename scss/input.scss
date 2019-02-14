@@ -71,6 +71,17 @@ body {
   font-size: 13px;
   width: 20%;
 }
+
+// container
+
+.container {
+  @include margins;
+  @include flexColumn;
+  width: 90%;
+}
+
+// gray box
+
 .grayBox {
   margin-top: 3%;
   @include flexRowBetween;
@@ -78,6 +89,13 @@ body {
   width: 100%;
   margin-bottom: 2%
 }
+
+.grayBoxContent>img {
+  @include widthHeight(98%, auto);
+}
+
+// limited
+
 .limitedTime {
   width: 100%;
   margin-bottom: -1%;
@@ -85,6 +103,18 @@ body {
 .limited {
   margin-bottom: -1.5%;
 }
+
+.limitedTime>img {
+  width: 100%;
+}
+
+.shop {
+  text-align: center;
+  position: relative;
+  bottom: 50px;
+}
+
+// main 1
 
 .main1 {
   @include flexRowBetween;
@@ -110,32 +140,7 @@ body {
   margin-bottom: 2%;
 }
 
-.grayBoxContent>img {
-  @include widthHeight(98%, auto);
-}
-
-.limitedTime>img {
-  width: 100%;
-}
-
-.container {
-  @include margins;
-  @include flexColumn;
-  width: 57%;
-}
-
-.shop {
-  text-align: center;
-  position: relative;
-  bottom: 50px;
-}
-button {
-  font-family: helvetica,arial,sans-serif;
-  font-size: 9pt;
-  border-radius: none;
-  padding: 7px 12px;
-  letter-spacing: .7px;
-}
+// main 2
 
 .main2 {
   @include flexRowBetween;
@@ -155,11 +160,22 @@ button {
   width: 31%;
 }
 
+
+button {
+  font-family: helvetica,arial,sans-serif;
+  font-size: 9pt;
+  border-radius: none;
+  padding: 7px 12px;
+  letter-spacing: .7px;
+}
+
+// footer
+
 .footer1 {
+  @include margins;
   text-align: center;
   font-size: 12px;
-  width: 60%;
-  @include margins;
+  width: 80%;
 }
 .line {
   width: 100%;
